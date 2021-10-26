@@ -1,7 +1,7 @@
 import os
 def exit(c):
-    os.remove("out.txt")
-    f = open('out.txt', "wx")
+    os.remove("out.py")
+    f = open('out.py', "wx")
     for i in c:
         f.write(str(i))
     f.close()
