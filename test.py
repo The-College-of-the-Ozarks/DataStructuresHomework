@@ -5,16 +5,14 @@ import unittest
 import out
 
 class TestStudentSubmissions(unittest.TestCase):
+  # I am using func() as a filler name for any functioon in out.py
   
-  def __init__(self):
-    # We will need to include a variable predicting the wanted output type within each assignment; for example: output_type = int
-    self.type = out.output_type
-    
-  def setUp(self):
-  
-  def test_integer(self):
-    
-  def tearDown(self):
+  def test_multiply_two_integers(self):
+    for i in range(20):
+      with self.subTest(i=i):
+        a = random.randint(-10, 10)
+        b = random.randint(-10,10)
+        self.assertEqual(out.func(a, b), a * b)
     
 
 unittest.main()
