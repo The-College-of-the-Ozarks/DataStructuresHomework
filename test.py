@@ -34,7 +34,7 @@ class TestStudentSubmissions(unittest.TestCase):
         e = random.randint(-10,10)
         self.assertEqual(out.func(a, b, c, d, e), a * b * c * d * e)
 
-    def test_multiply_integers_with_args(self):
+    def test_sort_numbers_in_list(self):
       for i in range(10):
         unsorted_list = []
         n = random.randint(1, 30)
